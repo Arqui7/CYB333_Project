@@ -1,0 +1,12 @@
+The Problem You Are Solving:
+
+The problem being addressed by the project is the need for a
+reliable and efficient method to scan ports on a target host. 
+Port scanning is a fundamental technique used in cybersecurity 
+to identify open ports that might be potential entry points 
+for unauthorized access or vulnerabilities. Manual port scanning 
+can be time-consuming and tedious, especially when dealing 
+with a large number of ports or multiple target hosts. 
+Therefore, automating the port scanning process with a script 
+like the one provided can greatly enhance efficiency and 
+accuracy in network reconnaissance tasks.
