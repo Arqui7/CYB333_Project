@@ -46,7 +46,7 @@ Port 80 is open
 Port 443 is open
 Port 8080 is closed
 
-In this example, the tool scans ports 1 to 100 on the host example.com and identifies that ports 80 and 443 are open, while port 8080 is closed.
+In this example, the tool scans ports 1 to 9000 on the host example.com and identifies that ports 80 and 443 are open, while port 8080 is closed.
 
 Troubleshooting
 
