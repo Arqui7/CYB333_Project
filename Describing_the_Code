@@ -1,0 +1,40 @@
+
+The Python script provided is a simple yet effective port scanner,
+utilizing the socket module for low-level network communication. 
+It begins by importing the necessary socket module, which provides
+access to network interfaces. The core functionality is encapsulated
+within the PS function, which takes three parameters: the target
+host's IP address or hostname, the starting port number for the
+scan, and the ending port number. Inside this function, a start
+message is printed to indicate the initiation of the port scan,
+followed by an attempt to resolve the hostname to its corresponding
+IP address. If the hostname resolution fails, an error message is
+printed, and the function exits.
+
+Next, a loop iterates through each port in the specified range,
+creating a TCP socket for each port using socket.socket() and
+setting a timeout of 2 seconds for the connection attempt. 
+The connect_ex() method is then used to attempt a connection to the target host and port. If the connection attempt is successful
+(indicated by a return value of 0), the port is considered open,
+and a corresponding message is printed. Otherwise, 
+if the connection attempt fails, the port is considered closed, 
+and a message indicating the same is printed.
+
+The function handles potential exceptions gracefully,
+including keyboard interrupts (KeyboardInterrupt) 
+and socket errors (socket.error). If a keyboard interrupt is detected (typically triggered by pressing Ctrl+C), 
+an exit message is printed, and the function exits. Similarly, if a socket error occurs during the connection attempt, 
+an error message is printed, and the function exits.
+
+Additionally, a main function is defined as the entry point of 
+the script, which prompts the user to input the target
+host's IP address or hostname, as well as the range 
+of ports to scan. Finally, the main function calls 
+the PS function with the user-provided input parameters 
+to initiate the port scan.
+
+In summary, this Python script serves as a basic yet functional 
+port scanner, allowing users to scan a range of ports 
+on a specified target host. It employs low-level 
+ocket programming to establish connections and provides 
+robust error handling to ensure a smooth scanning process.

@@ -1,4 +1,11 @@
-The primary deliverable of the project is a functional port scanning tool implemented in Python. This tool should be capable of scanning a specified range of ports on a target host and reporting which ports are open and which are closed.
+The primary deliverable of the project is a functional port scanning
+tool implemented in Python. This tool should be capable of 
+scanning a specified range of ports on a target host 
+and reporting which ports are open and which are closed.
 
-The port scanner should include robust error handling mechanisms to gracefully handle potential exceptions, such as hostname resolution errors, connection timeouts, and socket errors. This ensures that the tool remains reliable and stable during operation.
+The port scanner should include robust error handling mechanisms 
+to gracefully handle potential exceptions, such as 
+hostname resolution errors, connection timeouts, 
+and socket errors. This ensures that the tool remains 
+reliable and stable during operation.
 
