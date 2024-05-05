@@ -1,0 +1,3 @@
+Project Goals:
+
+The primary goal of the CYB333_Project is to develop a functional port scanner using Python. The project aims to provide a tool that can effectively scan a range of ports on a target host, providing information about which ports are open and which are closed. This tool can be used for various purposes, including network security assessments, system administration tasks, and network troubleshooting.

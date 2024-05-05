@@ -1,12 +1,59 @@
 # CYB333_Project
 First Port scanner for project in class CYB333
 
-The Python script provided is a simple yet effective port scanner, utilizing the socket module for low-level network communication. It begins by importing the necessary socket module, which provides access to network interfaces. The core functionality is encapsulated within the PS function, which takes three parameters: the target host's IP address or hostname, the starting port number for the scan, and the ending port number. Inside this function, a start message is printed to indicate the initiation of the port scan, followed by an attempt to resolve the hostname to its corresponding IP address. If the hostname resolution fails, an error message is printed, and the function exits.
+Installation
 
-Next, a loop iterates through each port in the specified range, creating a TCP socket for each port using socket.socket() and setting a timeout of 2 seconds for the connection attempt. The connect_ex() method is then used to attempt a connection to the target host and port. If the connection attempt is successful (indicated by a return value of 0), the port is considered open, and a corresponding message is printed. Otherwise, if the connection attempt fails, the port is considered closed, and a message indicating the same is printed.
+To use the Port Scanner tool, follow these simple steps:
 
-The function handles potential exceptions gracefully, including keyboard interrupts (KeyboardInterrupt) and socket errors (socket.error). If a keyboard interrupt is detected (typically triggered by pressing Ctrl+C), an exit message is printed, and the function exits. Similarly, if a socket error occurs during the connection attempt, an error message is printed, and the function exits.
+Clone the Repository: Start by cloning this repository to your local machine using Git:
+"git clone https://github.com/your_username/CYB333_Project.git"
 
-Additionally, a main function is defined as the entry point of the script, which prompts the user to input the target host's IP address or hostname, as well as the range of ports to scan. Finally, the main function calls the PS function with the user-provided input parameters to initiate the port scan.
+Navigate to the Directory: Move into the directory containing the Port Scanner script: cd CYB333_Project
 
-In summary, this Python script serves as a basic yet functional port scanner, allowing users to scan a range of ports on a specified target host. It employs low-level socket programming to establish connections and provides robust error handling to ensure a smooth scanning process.
+Install Dependencies (Optional): There are no external dependencies required for this script, as it utilizes only Python's built-in socket module.
+
+Run the Script: Execute the Python script by running the following command: python port_scanner.py
+"Note: depending on what version of python you are using"
+
+
+Usage
+
+Once you have installed the Port Scanner tool, you can use it to scan ports on a target host. Follow these steps to perform a port scan:
+
+Enter Target Host: When prompted, enter the IP address or hostname of the target host you want to scan.
+
+Enter Port Range: Provide the starting and ending port numbers for the scan when prompted.
+
+View Scan Results: The script will initiate the port scan and display the results, indicating which ports are open and which are closed.
+
+Repeat as Needed: You can perform multiple scans by running the script again and providing new target hosts or port ranges.
+
+Example
+
+Here's an example of how to use the Port Scanner tool:
+
+$ python port_scanner.py
+
+Enter IP address or hostname: example.com
+
+Enter the starting port number: 1
+
+Enter the ending port number: 9000
+
+Starting port scan on example.com...
+
+Port 80 is open
+Port 443 is open
+Port 8080 is closed
+
+In this example, the tool scans ports 1 to 100 on the host example.com and identifies that ports 80 and 443 are open, while port 8080 is closed.
+
+Troubleshooting
+
+If you encounter any issues while using the Port Scanner tool, consider the following troubleshooting tips:
+
+Hostname Resolution Error: If the hostname provided cannot be resolved to an IP address, ensure that the hostname is spelled correctly and that the target host is reachable from your network.
+
+Connection Timeout: If the script takes too long to complete or hangs during scanning, check your network connection and ensure that the target host is responsive.
+
+Socket Errors: If you encounter socket errors during the scan, verify that your system's firewall settings allow outgoing connections to the target host's ports.
