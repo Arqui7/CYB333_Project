@@ -14,7 +14,8 @@ printed, and the function exits.
 Next, a loop iterates through each port in the specified range,
 creating a TCP socket for each port using socket.socket() and
 setting a timeout of 2 seconds for the connection attempt. 
-The connect_ex() method is then used to attempt a connection to the target host and port. If the connection attempt is successful
+The connect_ex() method is then used to attempt a connection to the
+target host and port. If the connection attempt is successful
 (indicated by a return value of 0), the port is considered open,
 and a corresponding message is printed. Otherwise, 
 if the connection attempt fails, the port is considered closed, 
@@ -22,8 +23,10 @@ and a message indicating the same is printed.
 
 The function handles potential exceptions gracefully,
 including keyboard interrupts (KeyboardInterrupt) 
-and socket errors (socket.error). If a keyboard interrupt is detected (typically triggered by pressing Ctrl+C), 
-an exit message is printed, and the function exits. Similarly, if a socket error occurs during the connection attempt, 
+and socket errors (socket.error). If a keyboard interrupt is
+detected (typically triggered by pressing Ctrl+C), 
+an exit message is printed, and the function exits. Similarly, if a
+socket error occurs during the connection attempt, 
 an error message is printed, and the function exits.
 
 Additionally, a main function is defined as the entry point of 

@@ -8,11 +8,11 @@ To use the Port Scanner tool, follow these simple steps:
 Clone the Repository: Start by cloning this repository to your local machine using Git:
 "git clone https://github.com/your_username/CYB333_Project.git"
 
-Navigate to the Directory: Move into the directory containing the Port Scanner script: cd CYB333_Project
+Navigate to the Directory: Move into the directory containing the Port Scanner script: "cd CYB333_Project"
 
 Install Dependencies (Optional): There are no external dependencies required for this script, as it utilizes only Python's built-in socket module.
 
-Run the Script: Execute the Python script by running the following command: python port_scanner.py
+Run the Script: Execute the Python script by running the following command: "python port_scanner.py"
 "Note: depending on what version of python you are using"
 
 
